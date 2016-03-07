@@ -77,23 +77,23 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeImageCell" rowHeight="427" id="Ai0-g3-7if" customClass="HomeImageCell" customModule="Instagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="homeImageCell" rowHeight="427" id="Ai0-g3-7if" customClass="HomeImageCell" customModule="Instagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="427"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ai0-g3-7if" id="o3s-s6-rja">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="426.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="426.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_place_holder" translatesAutoresizingMaskIntoConstraints="NO" id="cnM-2S-40f">
-                                                    <rect key="frame" x="0.0" y="54" width="375" height="315"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="upload_place_holder" translatesAutoresizingMaskIntoConstraints="NO" id="cnM-2S-40f">
+                                                    <rect key="frame" x="14" y="52" width="334" height="288"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="Lqk-mo-4ga"/>
-                                                        <constraint firstAttribute="height" constant="315" id="wme-3v-U0x"/>
+                                                        <constraint firstAttribute="width" constant="334" id="Lqk-mo-4ga"/>
+                                                        <constraint firstAttribute="height" constant="288" id="wme-3v-U0x"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vua-9f-Z4f">
-                                                    <rect key="frame" x="28" y="386" width="326" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vua-9f-Z4f">
+                                                    <rect key="frame" x="16" y="357" width="326" height="21"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VLe-KJ-ty4"/>
@@ -113,15 +113,15 @@
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstItem="cnM-2S-40f" firstAttribute="leading" secondItem="o3s-s6-rja" secondAttribute="leading" id="1HS-8f-EwL"/>
+                                                <constraint firstItem="cnM-2S-40f" firstAttribute="leading" secondItem="o3s-s6-rja" secondAttribute="leading" constant="14" id="1HS-8f-EwL"/>
                                                 <constraint firstItem="efN-HM-wkM" firstAttribute="leading" secondItem="o3s-s6-rja" secondAttribute="leading" constant="15" id="1kd-Tl-Dm1"/>
                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="efN-HM-wkM" secondAttribute="trailing" constant="284" id="2gK-OK-UpN"/>
-                                                <constraint firstAttribute="trailing" secondItem="vua-9f-Z4f" secondAttribute="trailing" constant="21" id="Al0-8y-ZQe"/>
-                                                <constraint firstItem="cnM-2S-40f" firstAttribute="top" secondItem="efN-HM-wkM" secondAttribute="bottom" constant="25" id="Aru-0e-Jhr"/>
+                                                <constraint firstAttribute="trailing" secondItem="vua-9f-Z4f" secondAttribute="trailing" id="Al0-8y-ZQe"/>
+                                                <constraint firstItem="cnM-2S-40f" firstAttribute="top" secondItem="efN-HM-wkM" secondAttribute="bottom" constant="52.5" id="Aru-0e-Jhr"/>
                                                 <constraint firstItem="vua-9f-Z4f" firstAttribute="top" secondItem="cnM-2S-40f" secondAttribute="bottom" constant="17" id="XRX-ME-2sI"/>
                                                 <constraint firstItem="efN-HM-wkM" firstAttribute="top" secondItem="o3s-s6-rja" secondAttribute="top" constant="8" id="cly-SH-gk9"/>
-                                                <constraint firstItem="vua-9f-Z4f" firstAttribute="leading" secondItem="o3s-s6-rja" secondAttribute="leading" constant="28" id="d1F-Ud-WbY"/>
-                                                <constraint firstAttribute="trailing" secondItem="cnM-2S-40f" secondAttribute="trailing" id="t3e-jp-GgO"/>
+                                                <constraint firstItem="vua-9f-Z4f" firstAttribute="leading" secondItem="o3s-s6-rja" secondAttribute="leading" constant="16" id="d1F-Ud-WbY"/>
+                                                <constraint firstAttribute="trailing" secondItem="cnM-2S-40f" secondAttribute="trailing" constant="-6" id="t3e-jp-GgO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -129,6 +129,7 @@
                                             <outlet property="titleLabel" destination="vua-9f-Z4f" id="hKJ-dN-6nn"/>
                                             <outlet property="userImageView" destination="cnM-2S-40f" id="NkX-UB-xWq"/>
                                             <outlet property="usernameLabel" destination="efN-HM-wkM" id="nbb-dh-j7E"/>
+                                            <segue destination="0ns-IW-WPV" kind="push" identifier="detailSegue" id="p6y-nY-YNS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -169,6 +170,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddL-ac-slu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1557.5" y="-149.5"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Aiq-7w-Vjg">
+            <objects>
+                <viewController id="0ns-IW-WPV" customClass="DetailViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B2s-Em-4dP"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDu-tO-cEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XOz-lP-doV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-iv-pm8">
+                                <rect key="frame" x="0.0" y="150" width="375" height="282"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82d-Mu-UXd">
+                                <rect key="frame" x="20" y="116" width="82" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x3-So-EuG">
+                                <rect key="frame" x="20" y="467" width="335" height="96"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LAa-ee-2n4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="1x3-So-EuG" id="IdF-2d-gwI"/>
+                        <outlet property="userImageView" destination="3cm-iv-pm8" id="aML-8n-Ll8"/>
+                        <outlet property="usernameLabel" destination="82d-Mu-UXd" id="zwH-F2-aDK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-BC-PJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014.5" y="-149.5"/>
         </scene>
         <!--Photo View Controller-->
         <scene sceneID="O8o-De-oej">

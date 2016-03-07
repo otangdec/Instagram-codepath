@@ -18,6 +18,8 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     var userArray: [PFObject]?
     var refreshControl:UIRefreshControl!
     var userName: String?
+    var uploadImage: UIImage?
+    var comment: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +104,6 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
             if user != nil{
                 //print(user!["username"])
                 cell.usernameLabel.text = user!["username"] as! String
-
             }
         }
         
@@ -113,6 +114,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
                 if let imageData = imageData {
                     let image = UIImage(data:imageData)
                     cell.userImageView.image = image
+                    self.uploadImage = image
                 }
             }
         }
@@ -151,6 +153,17 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     @IBAction func onLogout(sender: AnyObject) {
         PFUser.logOut()
         NSNotificationCenter.defaultCenter().postNotificationName("userDidLogoutNotification", object: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "detailSegue" {
+            let detailViewController = segue.destinationViewController  as! DetailViewController
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPathForCell(cell)
+            let media = dataArray![indexPath!.row]
+            detailViewController.media = media
+        }
+    
     }
 }
 
