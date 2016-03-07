@@ -152,6 +152,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
 
     @IBAction func onLogout(sender: AnyObject) {
         PFUser.logOut()
+
         NSNotificationCenter.defaultCenter().postNotificationName("userDidLogoutNotification", object: nil)
     }
     
