@@ -102,7 +102,7 @@ class HomeViewController: UIViewController,UITableViewDelegate, UITableViewDataS
             if user != nil{
                 //print(user!["username"])
                 cell.usernameLabel.text = user!["username"] as! String
-                let createdTime = user!["_created_at"]
+
             }
         }
         
