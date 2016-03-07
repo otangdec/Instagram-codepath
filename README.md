@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] User can click each cell and go to the detail page
-- [x] Add Autolayout 
+- [x] App works in both portrait and lanscape (Auto Layout)
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -43,7 +43,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This week is very chanllenging for me due to personal emergency, exam and homework which result to having less time working on the project. Accessing data on Mongo DB is also still puzzling me, I know the relational database but once trying to connect it to iOS, it's not a very easy task.
 
 ## License
 
